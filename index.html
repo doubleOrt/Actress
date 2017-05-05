@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Emilia Clarke Official</title>
+
+<link rel="shortcut icon" href="media/daenerysCartoon.png" type="image/x-icon"/>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+ <link rel="stylesheet" href="lib/animate.css"/>
+<link rel="stylesheet" href="styles/main.css"/>
+
+<script src="lib/wow.min.js"></script>
+
+<script>
+wow = new WOW(
+                      {
+                      boxClass:     'wow',     
+                      animateClass: 'animated',
+                      offset:       0,      
+                      mobile:       false,     
+                      live:         true    
+                    }
+                    )
+                    
+wow.init();
+</script>
+
+</head>
+<body onscroll="changeNavColor('navItem')">
+
+
+<!-- this is the navigation bar section -->
+
+<ul id="navBar" class="animated zoomIn">
+<span>
+<li><a href="#" class="navItem" onclick="scrollTo('heroImage',0,10)">Home<div></div></a></li>
+<li><a href="#" class="navItem" onclick="scrollTo('secondDiv',0,10)">About<div></div></a></li>
+<li><a href="#" class="navItem" onclick="scrollTo('fifthDiv',0,10)">Contact<div></div></a></li>
+<li><a href="#" class="navItem" onclick="scrollTo('sixthDiv',0,10)">Ask Emilia<div></div></a></li>
+</span>
+</ul>
+
+
+<!-- this is the top (home) section -->
+
+<div id="heroImage">
+<div id="mainButtons" class="wow fadeIn">
+<div id="buttonsParent">
+<button onclick="scrollTo('thirdDiv',0,5)">Movies</button>
+<button onclick="scrollTo('fourthDiv',0,5)">Awards</button>
+</div>
+<p>when he returned from Lombardy where he had
+fought a long time gloriously for the Catholic King, decided to
+pass through Florence to rest several days in that City in order
+to visit His Excellency the Duke.</p>
+</div>
+</div>
+
+
+<!-- this is the about section -->
+
+<div id="secondDiv" class="wow zoomIn" data-wow-offset="100">
+<img id="cartoon" src="media/daeneryscartoon.png" alt="Daenerys Targaryen" width="303px" height="400px" ondragstart="event.preventDefault()"/>
+
+<div id="mainAbout">
+<h1>About Me</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit, mauris vitae faucibus feugiat, odio odio tempor enim, vel consequat purus urna sed quam. Sed egestas, quam quis posuere venenatis, ex mi interdum dui, et dictum elit diam quis erat. Donec vel sapien eu augue congue maximus nec a dui.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit, mauris vitae faucibus feugiat, odio odio tempor enim, vel consequat purus urna sed quam. Sed egestas, quam quis posuere venenatis, ex mi interdum dui, et dictum elit diam quis erat. Donec vel sapien eu augue congue maximus nec a dui.
+</p>
+</div>
+
+</div>
+
+
+
+<!-- this is the movies section -->
+
+
+<div id="thirdDiv">
+<div id="mainThirdChildContainer">
+
+<div id="movies" style="margin-top:0;">
+
+<div id="trianglesContainer"> 
+
+<!-- here we add a "data-movie" attribute to each div element, so we can then change the heading of the para to the hovered triangle with javascript-->
+<div class="triangles firstTri wow fadeInUp" data-wow-offset="10" style="background:url(media/got.jpg) -100px 25px;background-size:cover;" onmouseover="changeContents('moviesParaContainer')" onmouseout="triHovered('triangles')" data-movie="game of thrones"></div>
+<div class="triangles secondTri wow fadeInDown" data-wow-offset="10"  style="background:url(media/terminator.jpg) -30px 0;background-size:cover;" onmouseover="changeContents('moviesParaContainer')" onmouseout="triHovered('triangles')" data-movie="terminator genisys"></div>
+<div class="triangles firstTri wow fadeInUp" data-wow-offset="10"  style="background:url(media/mebeforeyou.jpg) -60px 0;background-size:cover;" onmouseover="changeContents('moviesParaContainer')" onmouseout="triHovered('triangles')" data-movie="me before you"></div>
+<div class="triangles secondTri wow fadeInDown" data-wow-offset="10"  style="background:url(media/shackled.png) 20px 0;background-size:cover;" onmouseover="changeContents('moviesParaContainer')" onmouseout="triHovered('triangles')" data-movie="shackled"></div>
+<div class="triangles firstTri wow fadeInUp" data-wow-offset="10"  style="background:url(media/domhemmingway.jpg) -20px 0;background-size:cover;" onmouseover="changeContents('moviesParaContainer')"  onmouseout="triHovered('triangles')" data-movie="dom hemmingway"></div>
+
+</div>
+
+<div id="moviesParaContainer" class="wow fadeIn">
+<h1>Game of Thrones</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada nibh sapien, suscipit varius elit sollicitudin varius. Maecenas vel tincidunt nisl. In feugiat, lectus sit amet ornare fringilla, erat ante tincidunt nisl, sed mattis massa augue vitae erat.
+</p>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<!-- this is the awards section -->
+
+<div id="fourthDiv" class="wow zoomIn">
+<img id="emmy" src="media/emmyAward.png" alt="Emmy Awards" ondragstart="event.preventDefault();"/>
+
+<div id="aboutAwards">
+<h1>Awards</h1>
+<ol type="1">
+<li>emmy award for Outstanding Supporting Actress in a Drama Series - 2012</li>
+<li>gracie award for Outstanding Female Rising Star in a Drama Series or Special - 2012</li>
+<li>OFTA Television Award for Best Supporting Actress in a Drama Series - 2013</li>
+<li>scream award for a breakout female performance - 2011</li>
+<li>golden nymph award for outstanding actress in a drama series - 2012</li>
+<p>these and many more <a href="#">awards</a> and <a href="#">nominations</a>...</p>
+</ol>
+
+
+</div>
+
+</div>
+
+
+<!-- this is the contact section -->
+
+<div id="fifthDiv"  class="wow fadeIn">
+
+<form id="contactUsForm" method="post" action="#">
+<input type="text" placeholder="Your Email" class="wow slideInRight"><br>
+<input type="text" placeholder="Subject"  class="wow slideInLeft" data-wow-offset="-100"/><br>
+<textarea placeholder="Your Message"  class="wow slideInRight" data-wow-offset="-200"></textarea><br>
+<input type="submit" value="Send Message"  class="wow slideInLeft" data-wow-offset="-200"/>
+</form>
+
+</div>
+
+
+<div id="sixthDiv">
+
+
+<div id="askEmiliaContainer">
+
+<form method="post" action="#" id="askEmiliaForm">
+
+<h1 class="wow zoomIn">Subscribe Now!</h1>
+
+<input type="text" placeholder="Card Holder's Name" class="wow slideInLeft"/> <br>
+<input type="text" placeholder="Credit/Debit Card Number" class="wow slideInRight"/> <br>
+<input type="text" placeholder="Security Code" class="wow slideInLeft"/> <br>
+
+<span class="selectLabel wow slideInRight" data-wow-offset="-500">Expiration Month:</span>
+<select class="wow slideInRight" data-wow-offset="-500">
+<option selected value='1'>Janaury</option>
+<option value='2'>February</option>
+<option value='3'>March</option>
+<option value='4'>April</option>
+<option value='5'>May</option>
+<option value='6'>June</option>
+<option value='7'>July</option>
+<option value='8'>August</option>
+<option value='9'>September</option>
+<option value='10'>October</option>
+<option value='11'>November</option>
+<option value='12'>December</option>
+</select>
+
+<br>
+
+<span class="selectLabel wow slideInLeft" data-wow-offset="-500">Expiration Year:</span>
+<select class="wow slideInLeft" data-wow-offset="-500">
+<option>2017</option>
+<option>2018</option>
+<option>2019</option>
+<option>2020</option>
+<option>2021</option>
+<option>2022</option>
+<option>2023</option>
+<option>2024</option>
+<option>2025</option>
+<option>2026</option>
+</select> <br>
+
+<input type="submit" value="Subscribe Now" class="wow slideInRight" data-wow-offset="-500"/>
+
+</form>
+
+
+<div id="aboutAskEmilia" class="wow zoomIn"  data-wow-delay=".2s">
+<h1>What Is Ask Emilia ?</h1>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit, mauris vitae faucibus feugiat, odio odio tempor enim, vel consequat purus urna sed quam. Sed egestas, quam quis posuere venenatis, ex mi interdum dui, et dictum elit diam quis erat. Donec vel sapien eu augue congue maximus nec a dui.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit, mauris vitae faucibus feugiat, odio odio tempor enim, vel consequat purus urna sed quam. Sed egestas, quam quis posuere venenatis, ex mi interdum dui, et dictum elit diam quis erat. Donec vel sapien eu augue congue maximus nec a dui.
+</p>
+</div>
+
+</div>
+
+<button class="wow rubberBand" data-wow-delay="2s" id="socialMediaToggle" type="button">Social Media <i id="bottomChevron" class="fa fa-chevron-circle-down"></i></button>
+</div>
+
+<div id="seventhDiv">
+
+<div id="socialContainer">
+<a href="#"><div class="pgram" style="background:url(social_icons/fb.jpg);background-size:100%;"></div></a>
+<a href="#"><div class="pgram" style="background:url(social_icons/twitter.jpg);background-size:100%;"></div></a>
+<a href="#"><div class="pgram" style="background:url(social_icons/google.jpg);background-size:100%;"></div></a>
+<a href="#"><div class="pgram" style="background:url(social_icons/insta.jpg);background-size:100%;"></div></a>
+</div>
+
+</div>
+
+
+<div id="circles">
+<div style="top:0%" onclick="scrollTo('heroImage',0,10)"></div>
+<div style="top:20%;" onclick="scrollTo('secondDiv',0,10)"></div>
+<div style="top:40%;" onclick="scrollTo('thirdDiv',0,10)"></div>
+<div style="top:60%;" onclick="scrollTo('fourthDiv',0,10)"></div>
+<div style="top:80%;" onclick="scrollTo('fifthDiv',0,10)"></div>
+<div style="top:100%;" onclick="scrollTo('sixthDiv',0,10)"></div>
+</div>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

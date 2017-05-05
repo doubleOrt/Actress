@@ -1,0 +1,1158 @@
+
+/* here are the fonts we'll use */
+
+@font-face {
+font-family:interstate;
+src:url(../fonts/interstate.ttf);
+}
+
+@font-face {
+font-family:basictitle;
+src:url(../fonts/basictitlefont.ttf);
+}
+
+@font-face {
+font-family:neuton;
+src:url(../fonts/neuton.ttf);
+}
+
+@font-face {
+font-family:gravity;
+src:url(../fonts/gravity.otf);
+}
+
+
+/* body and html are clear enough i believe */
+
+
+::selection {
+background-color:#d2f1f8;
+}
+
+html {
+width:100%;
+height:100%;
+margin:0;
+padding:0;
+}
+
+body {
+width:100%;
+height:100%;
+margin:0;
+padding:0;
+}
+
+
+/* and here comes the navigation bar */
+
+#navBar {
+position:fixed;
+display:inline-block;
+margin:0;
+padding:0;
+list-style:none;
+left:40px;
+top:25px;
+z-index:999999;
+}
+
+#navBar li {
+font-family:interstate;
+text-transform:uppercase;
+display:inline-block;
+margin-left:30px;
+font-size:15px;
+}
+
+#navBar li:first-child {
+margin-left:0;
+}
+
+#navBar li a {
+color:white;
+text-decoration:none;
+padding-bottom:5px;
+}
+
+
+#navBar li a div {
+width:100%;
+height:3px;
+margin-top:3px;
+background-color:white;
+-webkit-transition:all .4s ease-out; 
+-moz-transition:all .4s ease-out; 
+}
+
+
+#navBar li a:hover div {
+width:0;
+}
+
+/* this one's the first div, the one you see when your scrollTop is at 0 */
+
+#heroImage {
+background:url("../media/dany.jpg") fixed no-repeat;
+background-size:cover;
+width:100%;
+height:100%;	
+position:relative;
+-webkit-transition:all .6s ease-out;
+}
+
+#mainButtons {
+display:inline-block;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:350px;
+}
+
+#mainButtons #buttonsParent {
+display:inline-block;
+position:relative;
+left:50%;
+transform:translate(-50%,0);
+}
+
+
+#mainButtons button {
+color:white;
+background-color:transparent;
+font-family:interstate;
+font-size:1.5em;
+border:3px solid white;
+text-transform:uppercase;
+cursor:pointer;
+width:165px;
+height:57px;
+margin-left:10px;
+}
+
+#mainButtons button:first-child {
+margin-left:0;
+}
+
+#mainButtons button:focus {
+outline:none;
+tap-highlight-color: rgba(0,0,0,0);
+}
+
+#mainButtons button:hover {
+color:#e3e3e3;
+border:3px solid #e3e3e3;
+}
+
+#mainButtons p {
+display:inline-block;
+color:white;
+font-family:interstate;
+font-size:60%;
+width:90%;
+text-transform:capitalize;
+text-align:center;
+text-shadow:0 0 5px #494949;
+position:relative;
+left:50%;
+transform:translate(-50%,0);
+}
+
+
+/* here comes the second div (about) */
+
+#secondDiv {
+width:100%;
+height:100%;
+position:relative;
+border-bottom:2px solid lightgrey;
+}
+
+#cartoon {
+position:absolute;
+left:20%;
+top:25%;
+float:left;
+margin-right:100px;
+}
+
+#mainAbout {
+position:relative;
+top:25%;
+left:5%;
+width:40%;
+margin-left:520px;
+}
+
+#mainAbout h1 {
+color:grey;
+font-size:400%;
+font-family:basictitle;
+margin-bottom:1.4%;
+}
+
+#mainAbout p{
+color:grey;
+font-size:135%;
+font-family:neuton;
+width:100%;
+margin:0;
+}
+
+
+/* the reign of the third div starts here */
+
+#thirdDiv {
+margin:0;
+padding:0;
+width:100%;
+height:100%;
+position:relative;	
+background-color:white;
+border-bottom:2px solid lightgrey;
+}
+
+
+#mainThirdChildContainer {
+position:absolute;
+top:10%;
+left:0;
+width:100%;
+height:80%;
+}
+
+#movies {
+width:100%;
+height:100%;
+}
+
+#trianglesContainer {
+display:inline-block;
+width:75%;
+height:60%;
+position:relative;
+left:52%;
+transform:translate(-50%,0);
+margin-top:2%;
+}
+
+#movies .triangles {
+display:inline-block;
+width:30.6%;
+height:100%;
+margin-left:-15%;	
+-webkit-filter:grayscale(45%);
+}
+
+#movies .triangles:hover {
+opacity:.8;
+-webkit-filter:grayscale(0);	
+}
+
+#movies .triangles:first-child {
+margin-left:0;	
+}
+
+#movies .firstTri {
+-webkit-clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
+-moz-clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
+}
+
+#movies .secondTri {
+-webkit-clip-path: polygon(100% 0, 50% 100%, 0 0);
+-moz-clip-path: polygon(100% 0, 50% 100%, 0 0);
+}
+
+
+#moviesParaContainer  {
+position:relative;
+left:50%;
+top:5%;
+transform:translate(-50%,0);	
+text-align:center;
+width:70%;
+}
+
+#moviesParaContainer h1 {
+color:grey;
+font-family:basictitle;	
+font-size:250%;
+margin:0;
+text-transform:capitalize;
+}
+
+#moviesParaContainer p {
+color:grey;
+font-family:neuton;
+font-size:150%;
+margin:0;
+}
+
+/* and here starts the reign of the fourth div (awards) */
+
+#fourthDiv {
+width:100%;
+height:100%;
+position:relative;
+}
+
+#emmy {
+width:15%;
+height:50%;	
+position:relative;
+left:25%;
+top:50%;
+transform:translate(0,-50%);
+float:left;
+}
+
+#aboutAwards {
+display:inline-block;
+position:relative;
+top:50%;
+left:25%;
+transform:translate(0,-50%);	
+width:55%;	
+}
+
+#aboutAwards h1 {
+color:grey;
+font-size:400%;
+font-family:basictitle;
+margin:0;
+margin-bottom:1.4%;
+text-indent:40px;
+}
+
+#aboutAwards ol{
+color:grey;
+font-size:135%;
+font-family:neuton;
+text-transform:capitalize;
+width:100%;
+margin:0;
+}
+
+#aboutAwards p {
+color:grey;
+font-size:135%;
+font-family:neuton;
+width:100%;
+margin:0;
+}
+
+#aboutAwards a {
+color:#9c9c9c;
+border-bottom:2px dotted #9c9c9c;
+font-style:italic;
+text-decoration:none;	
+}
+
+#aboutAwards a:hover {
+border-bottom:none;	
+}
+
+
+/* here starts the reign of the fifth div (contact us) */
+
+#fifthDiv {
+width:100%;
+height:100%;
+position:relative;
+background:url("../media/emilia3.jpg") 0 0 no-repeat fixed;	
+background-size:cover;
+}
+
+#contactUsForm {
+position:relative;
+top:55%;
+left:8%;
+transform:translate(0,-50%);
+width:40%;	
+height:50%;
+font-family:gravity;
+font-size:100%;
+}
+
+#contactUsForm input {
+font-size:100%;
+color:#313131;
+margin-bottom:1.4%;	
+-moz-box-sizing:content-box;
+-webkit-box-sizing:content-box; 
+box-sizing:content-box;
+}
+
+#contactUsForm input:focus {
+outline:0;	
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#contactUsForm input[type="text"] {
+width:100%;
+height:12%;
+border:none;
+padding:6px;
+text-indent:20px;
+}
+
+#contactUsForm input[type="text"]:focus {
+text-indent:10px;	
+width:102%;
+}
+
+#contactUsForm input[type = "submit"] {
+color:white;
+width:100%;
+height:12%;
+background-color:#161616;
+border:none;
+padding:2px 6px;
+text-indent:20px;
+cursor:pointer;
+font-weight:bold;
+}
+
+#contactUsForm input[type = "submit"]:hover {
+background-color:#202020;
+}
+
+#contactUsForm input[type = "submit"]:active {
+background-color:#111111;
+}
+
+#contactUsForm textarea {
+color:#313131;
+font-family:gravity;
+font-size:100%;
+border:none;
+width:100%;
+height:30%;
+padding:12px 6px;
+margin-bottom:1.4%;
+text-indent:20px;
+resize:none;
+}
+
+#contactUsForm textarea:focus {
+outline:0;
+text-indent:10px;		
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+width:102%;
+}
+
+
+
+/* here starts the reign of the sixth div (ask emilia) */
+
+#sixthDiv {
+width:100%;
+height:100%;
+position:relative;	
+}
+
+#askEmiliaContainer {
+width:85%;
+height:70%;
+position:relative;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+#aboutAskEmilia {
+display:inline-block;
+width:45%;
+height:60%;
+margin-left:3%;
+position:relative;
+top:50%;
+left:5%;
+transform:translate(0,-50%);
+}
+
+#aboutAskEmilia h1 {
+color:grey;
+font-size:230%;
+font-family:basictitle;
+margin:0;
+margin-bottom:1.4%;
+text-align:center;
+}
+
+
+#aboutAskEmilia p {
+color:grey;
+font-size:115%;
+font-family:neuton;
+width:100%;
+margin:0;	
+}
+
+#askEmiliaForm {
+display:inline-block;
+width:50%;
+height:100%;
+float:left;
+}
+
+#askEmiliaForm h1 {
+color:lightgrey;
+font-size:300%;
+font-family:basictitle;
+margin:0;
+margin-bottom:3.5%;
+text-align:center;
+}
+
+#askEmiliaForm input {
+width:100%;	
+height:8%;
+font-family:gravity;
+font-size:100%;
+margin-bottom:1.8%;
+-ms-box-sizing:content-box;
+-moz-box-sizing:content-box;
+-webkit-box-sizing:content-box; 
+box-sizing:content-box;	
+border:none;
+}
+
+#askEmiliaForm input:focus {
+outline:0;	
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#askEmiliaForm input[type="text"] {
+padding:8px;
+text-indent:4%;
+border:2px solid transparent;
+border-bottom:2px solid lightgrey;
+background-color:#fafafa;
+-webkit-transition:all .2s ease-out;
+-moz-transition:all .2s ease-out;
+}
+
+#askEmiliaForm input[type="text"]:focus {
+text-indent:2%;	
+border:2px solid grey;
+}
+
+#askEmiliaForm select {
+width:100%;
+height:8%;
+color:grey;
+background-color:#f9f9f9;
+text-indent:4%;
+padding:8px;	
+margin-bottom:1.8%;
+border:none;
+border-bottom:2px solid lightgrey;
+-ms-box-sizing:content-box;
+-moz-box-sizing:content-box;
+-webkit-box-sizing:content-box; 
+box-sizing:content-box;	
+}
+
+#askEmiliaForm select:focus {
+outline:0;
+color:black;
+text-indent:2%;	
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+#askEmiliaForm input[type="submit"] {
+color:grey;
+font-weight:bold;
+background-color:#e0e0e0;
+border:1px solid lightgrey;
+border-bottom:4px solid lightgrey;
+padding:8px;	
+cursor:pointer;
+}
+
+#askEmiliaForm input[type="submit"]:hover {
+background-color:#e6e6e6;	
+}
+
+#askEmiliaForm input[type="submit"]:active {
+background-color:#e0e0e0;	
+}
+
+.selectLabel {
+display:inline-block;
+font-size:65%;
+font-family:gravity;	
+margin-bottom:1%;
+margin-left:2%;
+}
+
+
+
+
+
+
+#socialMediaToggle {
+color:#e0c95d;
+background:transparent;
+border:2px solid #e0c95d;
+font-size:120%;
+padding:7px 30px;
+position:absolute;
+bottom:2.1%;
+right:2.1%;
+cursor:pointer;
+}
+
+#socialMediaToggle:hover {
+color:#f2dd7d;
+border:2px solid #f2dd7d;	
+}
+
+#socialMediaToggle:focus {
+outline:0;	
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* here starts the reign of social media (seventhDiv) */
+
+#seventhDiv {
+width:100%;	
+height:15%;
+position:relative;
+border-top:2px solid lightgrey;
+display:none;
+}
+
+#socialContainer {
+display:inline-block;
+position:relative;
+left:52.5%;
+width:30%;
+height:100%;
+transform:translate(-50%,0);
+background-size:100%;
+}
+
+.pgram {
+display:inline-block;
+width:30%;
+height:100%;	
+margin-left:-6%;
+-webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);	
+}
+
+.pgram:hover {
+opacity:.7;
+}
+
+
+
+/*  these are the circles */
+
+
+#circles {
+position:fixed;
+top:50%;
+right:3%;
+transform:translate(0,-50%);
+height:35%;
+width:1.7%;
+}
+
+
+#circles div {
+width:15px;
+height:15px;
+background:transparent;
+border:2px solid lightgrey;
+border-radius:100%;
+cursor:pointer;
+-webkit-transition:all .2s ease-out;
+position:absolute;
+left:50%;
+transform:translate(-50%,0);
+}
+
+#circles div:hover {
+background-color:lightgrey;
+padding:2px;
+}
+
+#circles .active {
+background-color:lightgrey;	
+padding:2px;
+}
+
+
+
+
+
+/* here's our first media query */
+
+
+@media screen and (max-width:768px) {
+
+#heroImage {
+background-position:-200px 0;
+}
+
+
+#cartoon {
+left:50%;
+top:15%;
+transform:translate(-50%,0);
+}
+
+#mainAbout {
+clear:both;
+margin-left:0;
+left:50%;
+top:60%;
+transform:translate(-50%,0);
+width:80%;
+text-align:center;
+}
+
+#trianglesContainer {
+width:90%;
+height:30%;		
+margin-top:20%;
+}
+
+#moviesParaContainer h1 {
+font-size:300%;	
+}
+
+#emmy {
+width:35%;
+height:40%;	
+float:none;
+margin-top:5%;
+left:50%;
+transform:translate(-50%,0);
+}
+
+#aboutAwards {
+display:block;
+position:relative;
+width:70%;
+top:5%;
+left:50%;
+transform:translate(-50%,0);	
+}
+
+#aboutAwards ol{
+padding-left:1.8em;
+}
+
+#aboutAwards h1 {
+text-align:center;
+text-indent:0;	
+}
+
+#fifthDiv {
+background-size:100%;
+background-position:0 100%;
+background-color:black;	
+}
+
+#contactUsForm {
+width:75%;
+top:10%;
+left:50%;
+transform:translate(-50%,0);	
+}
+
+#askEmiliaContainer {
+height:100%;
+top:10%;
+transform:translate(-50%,0);
+}
+
+#askEmiliaForm {
+width:100%;
+height:50%;
+display:block;
+float:none;
+top:0;
+left:0;
+}
+
+#askEmiliaForm input {
+height:9%;
+}
+
+#askEmiliaForm select {
+height:9%;	
+}
+
+#aboutAskEmilia {
+width:100%;
+height:40%;
+top:0;
+left:2%;
+transform:translate(0,0);
+margin:0;
+margin-top:10%;
+}
+
+#aboutAskEmilia h1 {
+font-size:320%;	
+}
+
+#aboutAskEmilia p {
+font-size:150%;	
+}
+
+}
+
+/* landscape mode in mobile phones */
+
+@media screen and (max-height:414px) {
+#heroImage {
+background-position:0 0;
+}
+
+
+#cartoon {
+top:50%;
+left:10%;
+transform:translate(0,-50%);
+width:25%;
+height:60%;
+float:left;
+}
+
+#mainAbout {
+top:50%;
+left:40%;
+display:inline-block;
+width:50%;
+transform:translate(0,-50%);
+font-size:80%;
+}
+
+#mainAbout h1 {
+font-size:200%;	
+}
+
+#mainAbout p {
+font-size:100%;
+}
+
+#trianglesContainer {
+width:70%;
+height:50%;
+margin-top:3%;		
+}
+
+#moviesParaContainer h1 {
+font-size:150%;	
+}
+
+#moviesParaContainer p {
+font-size:80%;	
+}
+
+#emmy {
+display:inline-block;
+width:30%;
+height:70%;	
+left:20%;
+top:40%;
+float:left;
+transform:translate(0,-50%);
+}
+
+#aboutAwards {
+position:relative;
+top:50%;
+left:22%;
+transform:translate(0,-50%);
+}
+
+#aboutAwards h1 {
+font-size:250%;	
+}
+
+#aboutAwards ol {
+font-size:75%;	
+}
+
+#contactUsForm {
+font-size:75%;	
+top:55%;
+left:8%;
+transform:translate(0,-50%);
+width:40%;	
+height:50%;
+}
+
+#contactUsForm input[type="submit"] {
+padding-top:5px;	
+padding-bottom:5px;	
+}
+
+#askEmiliaContainer {
+width:70%;
+height:60%;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+#askEmiliaForm {
+display:inline-block;
+width:50%;
+height:100%;
+float:left;
+}
+
+
+#askEmiliaForm h1 {
+color:lightgrey;
+font-size:160%;
+font-family:basictitle;
+margin:0;
+margin-bottom:3.5%;
+text-align:center;
+}
+
+#askEmiliaForm input {
+width:90%;	
+height:3%;
+font-size:50%;
+padding:0;
+}
+
+#askEmiliaForm input[type="text"] {
+border-bottom:3px solid lightgrey;	
+}
+
+#askEmiliaForm input[type="submit"] {
+border-bottom:3px solid lightgrey;	
+}
+
+#askEmiliaForm select {
+width:90%;	
+height:3%;
+font-size:50%;
+border-bottom:3px solid lightgrey;
+}
+
+.selectLabel {
+font-size:40%;	
+}
+
+#aboutAskEmilia {
+width:50%;
+height:60%;
+margin-left:0;
+top:0;
+left:4%;
+}
+
+#aboutAskEmilia h1{
+font-size:130%;	
+}
+
+#aboutAskEmilia p {
+font-size:50%;	
+}
+
+#seventhDiv {
+height:20%;	
+}
+
+#socialContainer {
+width:52%;	
+}
+
+#circles {
+height:50%;	
+}
+
+#circles div {
+width:10px;
+height:10px;	
+}
+
+}
+
+
+@media screen and (max-width:450px) {
+
+#mainButtons button {
+width:110px;		
+height:45px;
+font-size:15px;
+}
+
+#mainButtons p {
+width:70%;
+font-size:90%;	
+}
+
+#navBar {
+width:100%;
+left:0;
+overflow:hidden;
+}
+
+#navBar span {
+display:inline-block;
+margin:0 auto;
+display:table;
+}
+
+#navBar li {
+font-size:13px;
+}
+
+
+#cartoon {
+left:50%;
+top:10%;
+width:50%;
+height:40%;
+transform:translate(-50%,0);
+}
+
+body {
+font-size:9px;
+}
+
+#trianglesContainer {
+width:95%;
+height:25%;	
+margin-top:30%;
+}
+
+#moviesParaContainer h1{
+font-size:300%;	
+}
+
+#moviesParaContainer p {
+font-size:170%;	
+}
+
+#emmy {
+width:50%;	
+}
+
+#fifthDiv {
+background-attachment:scroll;	
+}
+
+
+#contactUsForm input[type="text"]{
+height:7%;
+}
+
+#contactUsForm input[type="submit"]{
+height:9%;
+}
+
+#contactUsForm textarea {
+height:25%;	
+}
+
+#askEmiliaContainer {
+height:90%;
+}
+
+#askEmiliaForm {
+height:40%;	
+width:95%;
+}
+
+#askEmiliaForm input {
+height:5%;
+font-size:95%;
+}
+
+#askEmiliaForm input[type="submit"] {
+border-bottom-width:3px;
+}
+
+#askEmiliaForm select {
+height:5%;
+font-size:95%;
+}
+
+#aboutAskEmilia {
+margin-top:20%;
+left:2%;
+}
+
+#aboutAskEmilia p {
+font-size:140%;	
+}
+
+#socialContainer {
+width:80%;	
+}
+
+#circles {
+right:7%;		
+}
+
+#circles div {
+width:8px;
+height:8px;
+}
+
+}
+
+/* landscape mode for ipad */
+
+@media only screen and (min-width:1024px) and (max-width:1024px) and (min-height:768px) and (max-height:768px) {
+	
+#trianglesContainer {
+height:40%;	
+margin-top:8%;
+}	
+
+#emmy {
+width:25%;	
+left:10%;
+}
+
+#aboutAwards {
+left:10%;	
+}
+
+#fifthDiv {
+background-position:-150px;	
+}
+
+}
+
+@media only screen and (min-height:1024px) and (max-height:1024px) and (min-width:768px) and (max-width:768px) {
+	
+#aboutAskEmilia {
+margin-top:20%;	
+}
+
+
+#sixthDiv {
+padding-bottom:130px;	
+}
+	
+}
+
+
+@media only screen and (min-width:320px) and (max-width:320px) and (min-height:568px) and (max-height:568px) {
+	
+#aboutAskEmilia {
+margin-top:30%;	
+}	
+
+#aboutAskEmilia p {
+font-size:120%;	
+}
+
+}
